@@ -139,10 +139,7 @@ body {
       float: left;
       margin: 0;
     }
-    .navbar-right {
-      float: right !important;
-      margin-right: -15px;
-    }
+
     .navbar-nav > li {
       float: left;
     }

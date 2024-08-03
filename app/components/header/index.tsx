@@ -81,7 +81,6 @@ const Header = () => {
       });
     };
   }, []);
-  console.log("width", width);
   return (
     <header id="header" className="bg-[#333] h-full relative">
       <div
@@ -187,9 +186,9 @@ const Header = () => {
         </ScrollReveal>
       </div>
       {offsetScroll > 150 && width < 768 && (
-        <div className="fixed bottom-0 left-0 bg-black w-full h-[50px] z-50">
+        <div className="fixed bottom-0 left-0 bg-black w-full z-50">
           <div className="h-full">
-            <div className="navbar !m-0 h-full">
+            <div className="navbar !m-0 h-full flex items-center justify-center sm:flex sm:items-center sm:justify-center">
               <div className="navbar-collapse collapse block lg:hidden">
                 <ul className="nav navbar-nav navbar-right">
                   {Navbar.map((item, i) => (
