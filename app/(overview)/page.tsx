@@ -3,7 +3,6 @@ import Contact from "@/app/components/Contact";
 import NoSSRHeader from "@/app/components/NoSSRHeader";
 import Project from "@/app/components/Project";
 import Skill from "@/app/components/Skill";
-import Footer from "@/app/components/footer";
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
           <Contact />
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

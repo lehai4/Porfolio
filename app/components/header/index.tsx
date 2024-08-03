@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { ReactTyped } from "react-typed";
 import { Icon } from "../index";
 import ScrollReveal from "@/app/components/ScrollReveal";
-import MenuIcon from "@mui/icons-material/Menu";
+import useViewPortWidth from "@/app/components/hook/useViewPortWidth";
+
+const browser = typeof window !== undefined;
 
 const Navbar: LinkNavbar[] = [
   { id: 0, path: "about", namePath: "About" },
@@ -30,16 +32,22 @@ const IconList = [
     path: "https://www.linkedin.com/in/le-chi-hai-84479829a/",
     icon: <Icon name="bx bxl-linkedin" />,
   },
-  { id: 3, path: "/#", icon: <Icon name="bx bxl-gmail" /> },
+  {
+    id: 3,
+    path: "mailto:chihaile4@gmail.com",
+    icon: <Icon name="bx bxl-gmail" />,
+  },
 ];
 
 const Header = () => {
+  const width = useViewPortWidth();
   const headerRef = useRef<HTMLDivElement>(null);
+  const [idScroll, setIdScroll] = useState<string>("");
   const [offsetScroll, setOffsetScroll] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (typeof window !== "undefined") {
+      if (browser) {
         setOffsetScroll(window.scrollY);
       }
     };
@@ -62,6 +70,7 @@ const Header = () => {
         let id = sec.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
+          setIdScroll(id ?? "");
           navLinks.forEach((links) => {
             links.classList.remove("active");
             document
@@ -72,9 +81,9 @@ const Header = () => {
       });
     };
   }, []);
-
+  console.log("width", width);
   return (
-    <header id="header" className="bg-[#333] h-full">
+    <header id="header" className="bg-[#333] h-full relative">
       <div
         className={`header-top ${
           offsetScroll >= 40 ? "navigation-background bg-black" : ""
@@ -95,12 +104,6 @@ const Header = () => {
             <div>
               <div className="navigation-menu h-full">
                 <div className="navbar !m-0 h-full">
-                  <div className="group navbar-mobile relative h-full block lg:hidden cursor-pointer">
-                    <MenuIcon style={{ color: "white", height: "100%" }} />
-                    <div className="group-hover:translate-y-full absolute inset-0  bg-black -translate-y-full duration-500 ease-in">
-                      <p className="text-white">Hello</p>
-                    </div>
-                  </div>
                   <div className="navbar-collapse collapse hidden lg:block">
                     <ul className="nav navbar-nav navbar-right">
                       {Navbar.map((item, i) => (
@@ -109,7 +112,7 @@ const Header = () => {
                             href={`#${item.path}`}
                             className={`${
                               item.path === "about" ? "active" : ""
-                            }`}
+                            } hover:!text-primary-color transition-all duration-200 ease-out`}
                           >
                             {item.namePath}
                           </Link>
@@ -183,6 +186,30 @@ const Header = () => {
           </div>
         </ScrollReveal>
       </div>
+      {offsetScroll > 150 && width < 768 && (
+        <div className="fixed bottom-0 left-0 bg-black w-full h-[50px] z-50">
+          <div className="h-full">
+            <div className="navbar !m-0 h-full">
+              <div className="navbar-collapse collapse block lg:hidden">
+                <ul className="nav navbar-nav navbar-right">
+                  {Navbar.map((item, i) => (
+                    <li className={`relative block text-white`} key={i}>
+                      <Link
+                        href={`#${item.path}`}
+                        className={`${
+                          item.path === idScroll ? "text-primary-color" : ""
+                        } hover:text-primary-color transition-all duration-200 ease-out`}
+                      >
+                        {item.namePath}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
