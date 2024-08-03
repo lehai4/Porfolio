@@ -12,8 +12,7 @@ const Navbar: LinkNavbar[] = [
   { id: 0, path: "about", namePath: "About" },
   { id: 1, path: "skill", namePath: "Skills" },
   { id: 2, path: "projects", namePath: "Projects" },
-  { id: 3, path: "services", namePath: "Services" },
-  { id: 4, path: "contact", namePath: "Contact" },
+  { id: 3, path: "contact", namePath: "Contact" },
 ];
 
 const IconList = [

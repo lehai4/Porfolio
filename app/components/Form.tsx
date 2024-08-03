@@ -15,7 +15,7 @@ const schema = yup
       .required("Please enter email!"),
     phone: yup.string().required("Please enter phone!"),
     subject: yup.string().required("Please enter subject!"),
-    message: yup.string().required("Please enter email!"),
+    message: yup.string().required("Please enter message!"),
   })
   .required();
 
