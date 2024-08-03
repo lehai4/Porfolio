@@ -219,7 +219,7 @@ const FormContact = () => {
       </div>
       <button
         type="submit"
-        className="my-[15px] py-[14px] px-[45px] cursor-pointer inline-block tracking-[1px] relative transition-all duration-300 bg-primary-color text-black rounded-[50px] text-[20px] font-[600] hover:shadow-none shadow-primary"
+        className="my-[15px] py-[14px] px-[45px] mb-[70px] cursor-pointer inline-block tracking-[1px] relative transition-all duration-300 bg-primary-color text-black rounded-[50px] text-[20px] font-[600] hover:shadow-none shadow-primary"
       >
         Send message
       </button>
