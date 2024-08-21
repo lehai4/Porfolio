@@ -28,14 +28,15 @@ const About = () => {
                   </h2>
                 </Title>
                 <p className="my-[30px] text-white text-[12px] sm:text-[14px] md:text-[16px]">
-                  Good day, everyone! I'm Le Chi Hai, I'm 23 years old and I'm
-                  from TienGiang. I'm Fresher Front-end Developer. I have three
-                  months experience of working as a web developer at HCMC.
+                  Good day, everyone! I&apos;m Le Chi Hai, I&apos;m 23 years old
+                  and I&apos;m from TienGiang. I&apos;m Fresher Front-end
+                  Developer. I have three months experience of working as a web
+                  developer at HCMC.
                   <br />
-                  <br /> I'm often praised for my creativity and independent
-                  working skills. I always put my heart and soul into every
-                  single website that I develop. I guess that's all I have to
-                  share about myself. Thank you for reading!
+                  <br /> I&apos;m often praised for my creativity and
+                  independent working skills. I always put my heart and soul
+                  into every single website that I develop. I guess that&apos;s
+                  all I have to share about myself. Thank you for reading!
                 </p>
               </ScrollReveal>
             </div>
