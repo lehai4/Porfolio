@@ -1,6 +1,6 @@
 import ScrollReveal from "@/app/components/ScrollReveal";
+import Title from "@/app/components/Title";
 import Image from "next/image";
-import Link from "next/link";
 
 const About = () => {
   return (
@@ -16,31 +16,27 @@ const About = () => {
                   height={500}
                   quality={100}
                   alt="imageAbout"
-                  className="relative after:absolute after:bg-[rgba(0,0,0,.7)] after:left-0 after:top-0 after:w-full after:h-full after:-z-10"
+                  className="relative after:absolute after:bg-[rgba(0,0,0,.7)] after:left-0 after:top-0 after:w-full after:h-full after:-z-10 animate-shake transition-all duration-300 ease-in"
                 />
               </ScrollReveal>
             </div>
             <div className="px-[15px] flex items-center">
               <ScrollReveal>
-                <h2 className="text-[30px] md:text-[35px] lg:text-[40px] font-bold text-white">
-                  About <span className="text-primary-color">Me</span>
-                </h2>
-                <p className="my-[30px] text-white">
-                  A Front-End with a demonstrated history of working in a
-                  fast-paced work environment | Bachelor of Information
-                  Technology | Skilled in Front-End Development, Programming
-                  Languages like Javascript, Typescript, C# and used to several
-                  Framework ReactJs, NextJS.
+                <Title>
+                  <h2 className="mb-[40px] lg:mb-[60px] text-[22px] sm:text-[25px] md:text-[30px] lg:text-[38px] font-bold text-white">
+                    About <span className="text-primary-color">Me</span>
+                  </h2>
+                </Title>
+                <p className="my-[30px] text-white text-[12px] sm:text-[14px] md:text-[16px]">
+                  Good day, everyone! I'm Le Chi Hai, I'm 23 years old and I'm
+                  from TienGiang. I'm Fresher Front-end Developer. I have three
+                  months experience of working as a web developer at HCMC.
+                  <br />
+                  <br /> I'm often praised for my creativity and independent
+                  working skills. I always put my heart and soul into every
+                  single website that I develop. I guess that's all I have to
+                  share about myself. Thank you for reading!
                 </p>
-                <div className="lg:!mt-[60px]">
-                  <Link
-                    href="/"
-                    target="blank"
-                    className="my-[15px] py-[14px] px-[45px] cursor-pointer inline-block tracking-[1px] relative transition-all duration-300 bg-primary-color text-black rounded-[50px] text-[20px] font-[600] hover:shadow-none shadow-primary"
-                  >
-                    Read More
-                  </Link>
-                </div>
               </ScrollReveal>
             </div>
           </div>

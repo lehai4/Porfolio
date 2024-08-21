@@ -160,7 +160,7 @@ const Header = () => {
                           href={i.path}
                           key={i.id}
                           target="_blank"
-                          className="inline-flex justify-center items-center w-[50px] h-[50px] bg-transparent rounded-full text-primary-color transition-all duration-500 ease-out hover:bg-primary-color hover:text-black hover:shadow-primary "
+                          className="inline-flex justify-center items-center w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] bg-transparent rounded-full text-primary-color transition-all duration-500 ease-out hover:bg-primary-color hover:text-black hover:shadow-primary "
                           style={{ border: "0.2rem solid #00fbff" }}
                         >
                           {i.icon}
@@ -172,7 +172,7 @@ const Header = () => {
                         href="/CVFrontEnd_LeChiHai.pdf"
                         target="blank"
                         download="CV"
-                        className="mx-[30px] my-[15px] py-[14px] px-[45px] cursor-pointer inline-block tracking-[1px] relative transition-all duration-300 bg-primary-color text-black rounded-[50px] text-[20px] font-[600] hover:shadow-none shadow-primary"
+                        className="mx-[30px] my-[15px] py-[14px] px-[45px] cursor-pointer inline-block tracking-[1px] relative transition-all duration-300 bg-primary-color text-black rounded-[50px] text-[14px] md:text-[18px] lg:text-[20px] font-[600] hover:shadow-none shadow-primary"
                       >
                         Download CV
                       </Link>
@@ -184,30 +184,32 @@ const Header = () => {
           </div>
         </ScrollReveal>
       </div>
-      {offsetScroll > 150 && width < 768 && (
-        <div className="fixed bottom-0 left-0 bg-black w-full z-50">
-          <div className="h-full">
-            <div className="navbar !m-0 h-full flex items-center justify-center sm:flex sm:items-center sm:justify-center">
-              <div className="navbar-collapse collapse block lg:hidden">
-                <ul className="nav navbar-nav navbar-right">
-                  {Navbar.map((item, i) => (
-                    <li className={`relative block text-white`} key={i}>
-                      <Link
-                        href={`#${item.path}`}
-                        className={`${
-                          item.path === idScroll ? "text-primary-color" : ""
-                        } hover:text-primary-color transition-all duration-200 ease-out`}
-                      >
-                        {item.namePath}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+      <div
+        className={`fixed translate-y-[100%] ${
+          offsetScroll > 150 && width < 768 ? "!-translate-y-[100%]" : ""
+        } left-0 bg-black w-full z-50 transition-all duration-400 ease-out`}
+      >
+        <div className="h-full">
+          <div className="navbar !m-0 h-full flex items-center justify-center sm:flex sm:items-center sm:justify-center">
+            <div className="navbar-collapse collapse block lg:hidden">
+              <ul className="nav navbar-nav navbar-right">
+                {Navbar.map((item, i) => (
+                  <li className={`relative block text-white`} key={i}>
+                    <Link
+                      href={`#${item.path}`}
+                      className={`${
+                        item.path === idScroll ? "text-primary-color" : ""
+                      } hover:text-primary-color transition-all duration-200 ease-out`}
+                    >
+                      {item.namePath}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 };

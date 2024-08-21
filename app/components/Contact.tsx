@@ -1,16 +1,17 @@
 import FormContact from "@/app/components/Form";
 import ScrollReveal from "@/app/components/ScrollReveal";
+import Title from "@/app/components/Title";
 
 const Contact = () => {
   return (
     <div className="min-h-[100vh] h-full">
       <div className="pt-[108px] lg:px-[113px] pb-[31px]">
         <div className="container">
-          <ScrollReveal>
-            <h2 className="text-[30px] md:text-[35px] lg:text-[40px] font-bold text-white pb-[65px] text-center">
+          <Title>
+            <h2 className="mb-[50px] lg:mb-[78px] text-center text-[22px] sm:text-[25px] md:text-[30px] lg:text-[38px] font-bold text-white">
               Contact <span className="text-primary-color">Me</span>
             </h2>
-          </ScrollReveal>
+          </Title>
           <ScrollReveal>
             <FormContact />
           </ScrollReveal>
