@@ -3,13 +3,7 @@ import ScrollReveal from "@/app/components/ScrollReveal";
 import Title from "@/app/components/Title";
 import Video from "@/app/components/video";
 import { CloseOutlined } from "@mui/icons-material";
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-} from "@mui/material";
+import { Button, Dialog, DialogContent, DialogTitle } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import Image from "next/image";
@@ -285,10 +279,10 @@ const Project = () => {
         <CircularProgress color="inherit" />
       </Backdrop>
       <Dialog
-        fullWidth
         maxWidth="lg"
         open={checked}
         onClose={handleDialogOnClose}
+        aria-labelledby="responsive-dialog-title"
       >
         <DialogTitle
           sx={{
