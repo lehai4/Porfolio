@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="w-full h-full">
       <NoSSRHeader />
-      <main>
+      <main className="relative">
         <section className="about" id="about">
           <About />
         </section>
