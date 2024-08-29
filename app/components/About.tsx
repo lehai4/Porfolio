@@ -16,7 +16,7 @@ const About = () => {
                   height={500}
                   quality={100}
                   alt="imageAbout"
-                  className="relative after:absolute after:bg-[rgba(0,0,0,.7)] after:left-0 after:top-0 after:w-full after:h-full after:-z-10 animate-shake transition-all duration-300 ease-in"
+                  className="relative after:absolute after:bg-[rgba(0,0,0,.7)] after:left-0 after:top-0 after:w-full after:h-full after:-z-10 transition-all duration-300 ease-in"
                 />
               </ScrollReveal>
             </div>

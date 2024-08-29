@@ -19,8 +19,10 @@ const Skill = () => {
           </h2>
         </Title>
         <ScrollReveal options={options}>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            <SvgIcon />
+          <div className="container">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              <SvgIcon />
+            </div>
           </div>
         </ScrollReveal>
       </div>
