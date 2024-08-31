@@ -64,27 +64,27 @@ const Project = () => {
                       <span className="text-[#2295f9] font-semibold">
                         Personal project
                       </span>
-                      <section>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Team size:&nbsp;
                         </span>
                         1.
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Technologies:&nbsp;
                         </span>
                         Type-script, React Vite, TailwindCss, Ant Design,
                         ReduxToolkit, Axios Instances.
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Functions such as:&nbsp;
                         </span>
                         An admin panel featuring authentication and product
                         management, change personal profile, and dark mode for
                         enhance user expercience.
-                      </section>
+                      </div>
                     </div>
                     <div className="absolute bottom-0 left-0 p-[1rem] flex justify-between w-full items-center">
                       <button
@@ -120,27 +120,27 @@ const Project = () => {
                       <span className="text-[#2295f9] font-semibold">
                         Personal project
                       </span>
-                      <section>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Team size:&nbsp;
                         </span>
                         1.
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Technologies:&nbsp;
                         </span>
                         Typescript, NextJs, Next-Auth, Ant Design, MongoDB,
                         Redux-Toolkit, JWT Token.
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Functions such as:&nbsp;
                         </span>
                         SignIn/SignOut with Credentials or Google, search
                         products, get products, view products, filter products,
                         review product, cart and payment cart.
-                      </section>
+                      </div>
                     </div>
                     <div className="absolute bottom-0 left-0 p-[1rem] flex justify-between w-full items-center gap-4">
                       <Link
@@ -175,26 +175,26 @@ const Project = () => {
                       <span className="text-[#2295f9] font-semibold">
                         Personal project
                       </span>
-                      <section>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Team size:&nbsp;
                         </span>
                         1.
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Technologies:&nbsp;
                         </span>
                         ReactJs, Typescript, NodeJs, MongoDB, Socket.io,
                         Cloudinary
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Functions such as:&nbsp;
                         </span>
                         SignIn/SignOut, chat messages with other user, search by
                         username, change darkmode, send file and send emoji.
-                      </section>
+                      </div>
                     </div>
                     <div className="absolute bottom-0 left-0 p-[1rem] flex justify-between w-full items-center gap-4">
                       <button
@@ -233,24 +233,24 @@ const Project = () => {
                       <span className="text-[#2295f9] font-semibold">
                         Personal project
                       </span>
-                      <section>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Team size:&nbsp;
                         </span>
                         1.
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Technologies:&nbsp;
                         </span>
                         ReactJs, Typescript, SCSS, Ant Design...
-                      </section>
-                      <section>
+                      </div>
+                      <div>
                         <span className="text-[#2295f9] font-semibold">
                           - Functions such as:&nbsp;
                         </span>
                         Responsive, Html, Css with custom SCSS.
-                      </section>
+                      </div>
                     </div>
                     <div className="absolute bottom-0 left-0 p-[1rem] flex justify-between w-full items-center gap-4">
                       <Link
