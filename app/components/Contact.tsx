@@ -12,9 +12,9 @@ const Contact = () => {
               Contact <span className="text-primary-color">Me</span>
             </h2>
           </Title>
-          <ScrollReveal>
-            <FormContact />
-          </ScrollReveal>
+          <FormContact />
+          {/* <ScrollReveal>
+          </ScrollReveal> */}
         </div>
       </div>
     </div>
