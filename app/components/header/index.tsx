@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
 import useViewPortWidth from "@/app/components/hook/useViewPortWidth";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const browser = typeof window !== undefined;
 
