@@ -7,9 +7,9 @@ export const options = {
 };
 export const option = {
   reset: true,
-  duration: 3000,
+  duration: 900,
   origin: "top",
-  distance: "400px",
+  distance: "100px",
   easing: "cubic-bezier(0.5, 0, 0, 1)",
   rotate: {
     x: 20,
